@@ -14,8 +14,9 @@ app.on('ready',()=>{
             nodeIntegration:true
         }
     })
-    mainWindow.loadFile('demo.html')  //加载html页面
-    require('./main/menu.js')
+    mainWindow.loadFile('hello.html')  //加载html页面
+    //改变菜单内容
+    // require('./main/menu.js')
     mainWindow.on('closed',()=>{
         mainWindow = null
     })

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        创建数据库后打开的子窗口
+    </h3>
+    <button id="childBtn">
+        创建数据库
+    </button>
+    <br>
+    <button id="createTable">
+        创建表
+    </button>
+    <br>
+    <button id="insertContent">
+        插入内容
+    </button>
+    <br>
+    <button id="queryContents">
+        查询所有内容
+    </button>
+    <br>
+    <label>输入要查询的id:</label>
+    <input type="text" id="ID" value="">
+    <button id="queryById">
+        通过ID查询
+    </button>
+    <br>
+    更新表中内容
+    <form action="http://localhost:3333/updateTable" method="GET">
+        <label id="id">
+            id:
+        </label>
+        <input type="text" name="id" value="">
+        <label id="title">
+            title:
+        </label>
+        <input type="text" name="title" value="">
+        <label id="body">
+            body
+        </label>
+        <input type="text" name="body" value="">
+        <button type="submit" >更新表中内容</button>
+    </form>
+    
+</body>
+    <script src="./render/app.js"></script>
+</html>
